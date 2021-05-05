@@ -1,0 +1,15 @@
+current directory: /Users/isao/Rails5/sample_appR5/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+/Users/isao/.rbenv/versions/2.6.3/bin/ruby -r ./siteconf20210504-4720-m5aa0y.rb extconf.rb
+creating Makefile
+
+current directory: /Users/isao/Rails5/sample_appR5/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/isao/Rails5/sample_appR5/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/isao/Rails5/sample_appR5/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20210504-4720-18h1k5j

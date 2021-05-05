@@ -1,0 +1,15 @@
+current directory: /Users/isao/Rails5/sample_appR5/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/isao/.rbenv/versions/2.6.3/bin/ruby -r ./siteconf20210504-4720-xf80cv.rb extconf.rb
+creating Makefile
+
+current directory: /Users/isao/Rails5/sample_appR5/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/isao/Rails5/sample_appR5/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/isao/Rails5/sample_appR5/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210504-4720-1iebps0/skiptrace/internal

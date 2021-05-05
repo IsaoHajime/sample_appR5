@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.3'
+gem 'rails', '5.2.5'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 # Use Puma as the app server
@@ -42,6 +42,8 @@ group :development, :test do
   gem 'sqlite3', '1.3.13'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '9.0.6', platforms: :mri
+  # rspec can speed up the process by launching an application built in Rails called Spring by adding a bin / command.
+  gem 'spring-commands-rspec'
 end
 
 group :development do
@@ -60,8 +62,19 @@ group :test do
   gem 'minitest-reporters',       '1.1.14'
   gem 'guard',                    '2.16.2'
   gem 'guard-minitest',           '2.4.4'
-  # gem 'capybara', '>= 2.15'
-  # gem 'selenium-webdriver'
+  # Rspec
+  gem 'rspec-rails'
+  # Create data for testing
+  gem 'factory_bot_rails'
+  # Create dummy data with a name that seems to exist
+  gem 'faker'
+  # Mainly used in integration tests related to screens.
+  gem 'capybara', '~> 2.13'
+  gem 'database_cleaner'
+  # Check which page is currently open while testing with Capybara
+  gem 'launchy'
+  # For parallel execution of multiple tests.
+  gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   # gem 'chromedriver-helper'
 end
